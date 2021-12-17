@@ -4,7 +4,7 @@
   - Used the nearest or associated BAT spectrum in the hard X-ray range.
   - Index1 is fixed to BAT.
 
-| id| Flag| fermi_coord| fermi_extended_model_major| fermi_pindex_PL| fermi_flux| bat_name_counterpart_nearest| bat_category_type_nearest| sep_nearest| bat_pindex_nearest| bat_flux_nearest| bat_name_counterpart| bat_category_type| SED&nbsp;&nbsp;&nbsp;&nbsp;option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;option&nbsp;&nbsp;&nbsp;&nbsp;
+| id| Flag| fermi_coord| fermi_extended_model_major| fermi_pindex_PL| fermi_flux| bat_name_counterpart_nearest| bat_category_type_nearest| sep_nearest| bat_pindex_nearest| bat_flux_nearest| bat_name_counterpart| bat_category_type| SED&nbsp;&nbsp;&nbsp;&nbsp;option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;option&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;option&nbsp;&nbsp;&nbsp;&nbsp;
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |---
 | 1 | F | (80, -68.75) | 3.0 | 2.19 | 11 | 2MASX J05052442-6734358 | Unknown AGN | 1.7 | 2.02 | 1 | SWIFT J045106.8-694803; IGR J05007-7047; 2MASX J05052442-6734358; LMC X-4; RX J0531.2-6609; LMC X-1; PSR B0540-69; XMMU J054134.7-682550; [RSG2010] A;  | HMXB; HMXB; Unknown AGN; HMXB; HMXB; HMXB; Pulsar; HMXB; HMXB;  | ![](figures/SED/Extended_BPL_LMC-Galaxy.png)
 | 2 | F | (75.25, -69.75) | 0.9 | 2.1 | 2 | SWIFT J045106.8-694803 | HMXB | 0.8 | 2.48 | 3.3 | ... | ... | ![](figures/SED/Extended_BPL_LMC-FarWest.png)
