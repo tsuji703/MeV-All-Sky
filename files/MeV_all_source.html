@@ -1,0 +1,3326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>MeV tp_beginner6</title>
+<link rel="stylesheet" href="style.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+
+<section id="point">
+
+<h1>Point sources</h1>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th class="fixed01">id</th>
+      <th class="fixed02">Flag</th>
+      <th class="fixed02">bat_name_counterpart</th>
+      <th class="fixed02">bat_category_type</th>
+      <th class="fixed02">fermi_name_counterpart</th>
+      <th class="fixed02">fermi_name_counterpart2</th>
+      <th class="fixed02">fermi_category_type</th>
+      <th class="fixed02">coord_gal</th>
+      <th class="fixed02">LP_redchi2</th>
+      <th class="fixed02">BPL_redchi2</th>
+      <th class="fixed02">SED_LP</th>
+      <th class="fixed02">SED_BPL</th>
+      <th class="fixed02">SED_2comp</th>
+      <th class="fixed02">SED_user</th>
+      <th class="fixed02">Model</th>
+      <th class="fixed02">mask_gal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>M</td>
+      <td class="fixed02">[HB89] 0537-441</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0537-441</td>
+      <td>NaN</td>
+      <td>BLL</td>
+      <td>(250.1, -31.1)</td>
+      <td>3.9</td>
+      <td>32.6</td>
+      <td> <img src="figures/SED_sherpa_LogParabola/fig_[HB89]_0537-441.png" alt="fig"></td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0537-441.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0537...</td>
+      <td>BPL</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>M</td>
+      <td class="fixed02">[HB89] 0716+714</td>
+      <td>Beamed AGN</td>
+      <td>S5 0716+71</td>
+      <td>NaN</td>
+      <td>BLL</td>
+      <td>(144.0, 28.0)</td>
+      <td>5.1</td>
+      <td>42.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0716+714.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0716...</td>
+      <td>BPL</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>M</td>
+      <td class="fixed02">Mrk 421</td>
+      <td>Beamed AGN</td>
+      <td>Mkn 421</td>
+      <td>NaN</td>
+      <td>BLL</td>
+      <td>(179.8, 65.0)</td>
+      <td>72.2</td>
+      <td>8.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Mrk_...</td>
+      <td>![fig](figures/SED_2comp/Mrk_421.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Mrk_421.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>M</td>
+      <td class="fixed02">Mrk 501</td>
+      <td>Beamed AGN</td>
+      <td>Mkn 501</td>
+      <td>NaN</td>
+      <td>BLL</td>
+      <td>(63.6, 38.9)</td>
+      <td>5.4</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Mrk_...</td>
+      <td>![fig](figures/SED_2comp/Mrk_501.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Mrk_501.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>M</td>
+      <td>BL Lac</td>
+      <td>Beamed AGN</td>
+      <td>BL Lac</td>
+      <td>NaN</td>
+      <td>BLL</td>
+      <td>(92.6, -10.4)</td>
+      <td>3.0</td>
+      <td>8.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_BL_L...</td>
+      <td>![fig](figures/SED_2comp/BL_Lac.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_BL_Lac.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>M</td>
+      <td>1ES 0033+595</td>
+      <td>Beamed AGN</td>
+      <td>1ES 0033+595</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(121.0, -3.0)</td>
+      <td>5.2</td>
+      <td>2.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_1ES_...</td>
+      <td>![fig](figures/SED_2comp/1ES_0033+595.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_1ES_0033+59...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>A</td>
+      <td>2MASX J01155048+2515369</td>
+      <td>Sy1</td>
+      <td>RX J0115.7+2519</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(129.9, -37.2)</td>
+      <td>1.1</td>
+      <td>1.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J01155048+25153...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J0115...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>M</td>
+      <td>SHBL J012308.7+342049</td>
+      <td>Beamed AGN</td>
+      <td>1ES 0120+340</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(130.3, -28.1)</td>
+      <td>1.2</td>
+      <td>1.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SHBL...</td>
+      <td>![fig](figures/SED_2comp/SHBL_J012308.7+342049...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SHBL_J01230...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>M</td>
+      <td>B3 0133+388</td>
+      <td>Beamed AGN</td>
+      <td>B3 0133+388</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(132.4, -22.9)</td>
+      <td>5.6</td>
+      <td>13.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_B3_0...</td>
+      <td>![fig](figures/SED_2comp/B3_0133+388.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_B3_0133+388...</td>
+      <td>BPL</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>M</td>
+      <td>RBS 259</td>
+      <td>Beamed AGN</td>
+      <td>1RXS J015658.6-530208</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(282.2, -61.4)</td>
+      <td>3.3</td>
+      <td>2.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_RBS_...</td>
+      <td>![fig](figures/SED_2comp/RBS_259.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_RBS_259.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>M</td>
+      <td>2MASX J02141794+5144520</td>
+      <td>Beamed AGN</td>
+      <td>TXS 0210+515</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(135.8, -9.0)</td>
+      <td>0.9</td>
+      <td>1.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J02141794+51445...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J0214...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>M</td>
+      <td>QSO B0229+200</td>
+      <td>Beamed AGN</td>
+      <td>1ES 0229+200</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(152.9, -36.6)</td>
+      <td>1.2</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_QSO_...</td>
+      <td>![fig](figures/SED_2comp/QSO_B0229+200.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_QSO_B0229+2...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>A</td>
+      <td>ESO 416-G002</td>
+      <td>Sy1.9</td>
+      <td>PHL 1389</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(225.4, -67.0)</td>
+      <td>1.7</td>
+      <td>2.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_ESO_...</td>
+      <td>![fig](figures/SED_2comp/ESO_416-G002.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_ESO_416-G00...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>M</td>
+      <td>BZB J0244-5819</td>
+      <td>Beamed AGN</td>
+      <td>RBS 0351</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(278.4, -53.1)</td>
+      <td>0.7</td>
+      <td>0.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_BZB_...</td>
+      <td>![fig](figures/SED_2comp/BZB_J0244-5819.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_BZB_J0244-5...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>M</td>
+      <td>QSO B0347-121</td>
+      <td>Beamed AGN</td>
+      <td>1ES 0347-121</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(201.9, -45.7)</td>
+      <td>2.0</td>
+      <td>1.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_QSO_...</td>
+      <td>![fig](figures/SED_2comp/QSO_B0347-121.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_QSO_B0347-1...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>M</td>
+      <td>PKS 0352-686</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0352-686</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(282.8, -40.8)</td>
+      <td>0.9</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0352-686.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0352-68...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>M</td>
+      <td>PKS 0426-380</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0426-380</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(240.7, -43.6)</td>
+      <td>2.2</td>
+      <td>240.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0426-380.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0426-38...</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>M</td>
+      <td>PKS 0548-322</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0548-322</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(237.6, -26.2)</td>
+      <td>0.8</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0548-322.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0548-32...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>M</td>
+      <td>PMN J0640-1253</td>
+      <td>Beamed AGN</td>
+      <td>TXS 0637-128</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(223.2, -8.3)</td>
+      <td>0.3</td>
+      <td>0.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PMN_...</td>
+      <td>![fig](figures/SED_2comp/PMN_J0640-1253.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PMN_J0640-1...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>M</td>
+      <td>2MASX J07103005+5908202</td>
+      <td>Beamed AGN</td>
+      <td>1H 0658+595</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(157.4, 25.4)</td>
+      <td>2.7</td>
+      <td>1.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J07103005+59082...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J0710...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>M</td>
+      <td>2MASS J09303759+4950256</td>
+      <td>Beamed AGN</td>
+      <td>1ES 0927+500</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(168.1, 45.7)</td>
+      <td>1.1</td>
+      <td>1.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASS_J09303759+49502...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASS_J0930...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>M</td>
+      <td>2MASS J09343014-1721215</td>
+      <td>Beamed AGN</td>
+      <td>RXC J0934.4-1721</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(250.2, 24.8)</td>
+      <td>0.8</td>
+      <td>0.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASS_J09343014-17212...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASS_J0934...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>M</td>
+      <td>2MASX J10311847+5053358</td>
+      <td>Beamed AGN</td>
+      <td>1ES 1028+511</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(161.4, 54.5)</td>
+      <td>1.0</td>
+      <td>0.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J10311847+50533...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J1031...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>M</td>
+      <td>2MASX J11033765-2329307</td>
+      <td>Beamed AGN</td>
+      <td>1ES 1101-232</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(273.2, 33.1)</td>
+      <td>0.7</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J11033765-23293...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J1103...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>M</td>
+      <td>2MASX J11363009+6737042</td>
+      <td>Beamed AGN</td>
+      <td>RX J1136.5+6737</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(133.5, 48.0)</td>
+      <td>0.9</td>
+      <td>0.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J11363009+67370...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J1136...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>M</td>
+      <td>FBQS J1221+3010</td>
+      <td>Beamed AGN</td>
+      <td>PG 1218+304</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(186.4, 82.7)</td>
+      <td>1.5</td>
+      <td>0.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_FBQS...</td>
+      <td>![fig](figures/SED_2comp/FBQS_J1221+3010.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_FBQS_J1221+...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>M</td>
+      <td>[HB89] 1415+259</td>
+      <td>Beamed AGN</td>
+      <td>1E 1415.6+2557</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(33.7, 70.6)</td>
+      <td>0.6</td>
+      <td>0.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_1415+259.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_1415...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>M</td>
+      <td>1ES 1426+428</td>
+      <td>Beamed AGN</td>
+      <td>H 1426+428</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(77.5, 64.9)</td>
+      <td>1.1</td>
+      <td>0.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_1ES_...</td>
+      <td>![fig](figures/SED_2comp/1ES_1426+428.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_1ES_1426+42...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>M</td>
+      <td>[HB89] 1803+784</td>
+      <td>Beamed AGN</td>
+      <td>S5 1803+784</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(110.0, 29.1)</td>
+      <td>2.4</td>
+      <td>8.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_1803+784.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_1803...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>M</td>
+      <td>QSO B1959+650</td>
+      <td>Beamed AGN</td>
+      <td>1ES 1959+650</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(98.0, 17.7)</td>
+      <td>9.3</td>
+      <td>3.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_QSO_...</td>
+      <td>![fig](figures/SED_2comp/QSO_B1959+650.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_QSO_B1959+6...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>M</td>
+      <td>2MASX J23470479+5142179</td>
+      <td>Beamed AGN</td>
+      <td>1ES 2344+514</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(112.9, -9.9)</td>
+      <td>4.4</td>
+      <td>3.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J23470479+51421...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J2347...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>M</td>
+      <td>H 2356-309</td>
+      <td>Beamed AGN</td>
+      <td>H 2356-309</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(12.8, -78.0)</td>
+      <td>0.5</td>
+      <td>0.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_H_23...</td>
+      <td>![fig](figures/SED_2comp/H_2356-309.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_H_2356-309....</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>M</td>
+      <td>3C 454.3</td>
+      <td>Beamed AGN</td>
+      <td>3C 454.3</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(86.1, -38.2)</td>
+      <td>65.5</td>
+      <td>372.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_4...</td>
+      <td>![fig](figures/SED_2comp/3C_454.3.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_454.3.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>M</td>
+      <td>[HB89] 2230+114</td>
+      <td>Beamed AGN</td>
+      <td>CTA 102</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(77.4, -38.6)</td>
+      <td>16.9</td>
+      <td>207.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_2230+114.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_2230...</td>
+      <td>BPL</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>M</td>
+      <td>PKS 2227-088</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2227-08</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(55.2, -51.7)</td>
+      <td>1.3</td>
+      <td>7.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2227-088.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2227-08...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>M</td>
+      <td>[HB89] 2142-758</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2142-75</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(315.8, -36.5)</td>
+      <td>1.1</td>
+      <td>10.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_2142-758.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_2142...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>M</td>
+      <td>QSO B2013+370</td>
+      <td>Beamed AGN</td>
+      <td>MG2 J201534+3710</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(74.9, 1.2)</td>
+      <td>3.6</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_QSO_...</td>
+      <td>![fig](figures/SED_2comp/QSO_B2013+370.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_QSO_B2013+3...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>M</td>
+      <td>PKS 1830-21</td>
+      <td>Beamed AGN</td>
+      <td>PKS 1830-211</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(12.2, -5.7)</td>
+      <td>6.2</td>
+      <td>47.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_1830-21.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_1830-21...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>M</td>
+      <td>3C 345</td>
+      <td>Beamed AGN</td>
+      <td>3C 345</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(63.5, 41.0)</td>
+      <td>1.1</td>
+      <td>0.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_3...</td>
+      <td>![fig](figures/SED_2comp/3C_345.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_345.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>M</td>
+      <td>PKS 1622-29</td>
+      <td>Beamed AGN</td>
+      <td>PKS B1622-297</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(348.8, 13.3)</td>
+      <td>1.3</td>
+      <td>4.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_1622-29.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_1622-29...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>M</td>
+      <td>PKS 1510-08</td>
+      <td>Beamed AGN</td>
+      <td>PKS 1510-089</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(351.3, 40.1)</td>
+      <td>0.4</td>
+      <td>21.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_1510-08.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_1510-08...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>M</td>
+      <td>3C 279</td>
+      <td>Beamed AGN</td>
+      <td>3C 279</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(305.1, 57.1)</td>
+      <td>6.0</td>
+      <td>88.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_2...</td>
+      <td>![fig](figures/SED_2comp/3C_279.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_279.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>M</td>
+      <td>3C 273</td>
+      <td>Beamed AGN</td>
+      <td>3C 273</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(289.9, 64.4)</td>
+      <td>9.5</td>
+      <td>15.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_2...</td>
+      <td>![fig](figures/SED_2comp/3C_273.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_273.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>M</td>
+      <td>PG 1222+216</td>
+      <td>Beamed AGN</td>
+      <td>4C +21.35</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(255.1, 81.7)</td>
+      <td>1.6</td>
+      <td>10.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PG_1...</td>
+      <td>![fig](figures/SED_2comp/PG_1222+216.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PG_1222+216...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>M</td>
+      <td>4C +49.22</td>
+      <td>Beamed AGN</td>
+      <td>4C +49.22</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(145.6, 65.0)</td>
+      <td>1.9</td>
+      <td>3.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4C_+...</td>
+      <td>![fig](figures/SED_2comp/4C_+49.22.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4C_+49.22.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>M</td>
+      <td>[HB89] 0836+710</td>
+      <td>Beamed AGN</td>
+      <td>4C +71.07</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(143.5, 34.4)</td>
+      <td>18.8</td>
+      <td>28.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0836+710.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0836...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>M</td>
+      <td>PMN J0641-0320</td>
+      <td>Beamed AGN</td>
+      <td>PMN J0641-0320</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(214.8, -3.7)</td>
+      <td>1.7</td>
+      <td>3.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PMN_...</td>
+      <td>![fig](figures/SED_2comp/PMN_J0641-0320.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PMN_J0641-0...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>M</td>
+      <td>PKS 0528+134</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0528+134</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(191.4, -11.0)</td>
+      <td>2.9</td>
+      <td>5.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0528+134.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0528+13...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>M</td>
+      <td>PKS 0402-362</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0402-362</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(237.7, -48.5)</td>
+      <td>4.1</td>
+      <td>35.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0402-362.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0402-36...</td>
+      <td>BPL</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>M</td>
+      <td>PKS 2325+093</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2325+093</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(91.1, -48.0)</td>
+      <td>0.8</td>
+      <td>1.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2325+093.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2325+09...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>M</td>
+      <td>87GB 215950.2+503417</td>
+      <td>Beamed AGN</td>
+      <td>NRAO 676</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(97.7, -3.5)</td>
+      <td>3.0</td>
+      <td>9.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_87GB...</td>
+      <td>![fig](figures/SED_2comp/87GB_215950.2+503417....</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_87GB_215950...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>M</td>
+      <td>PKS 2149-306</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2149-306</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(17.1, -50.8)</td>
+      <td>4.4</td>
+      <td>10.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2149-306.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2149-30...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>M</td>
+      <td>[HB89] 1921-293</td>
+      <td>Beamed AGN</td>
+      <td>PKS B1921-293</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(9.3, -19.6)</td>
+      <td>0.8</td>
+      <td>0.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_1921-293.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_1921...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>M</td>
+      <td>2MASS J16561677-3302127</td>
+      <td>Beamed AGN</td>
+      <td>2MASS J16561677-3302127</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(350.6, 6.4)</td>
+      <td>0.5</td>
+      <td>1.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASS_J16561677-33021...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASS_J1656...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>M</td>
+      <td>[HB89] 1354+195</td>
+      <td>Beamed AGN</td>
+      <td>4C +19.44</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(9.2, 73.0)</td>
+      <td>1.2</td>
+      <td>1.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_1354+195.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_1354...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>M</td>
+      <td>[HB89] 1334-127</td>
+      <td>Beamed AGN</td>
+      <td>PKS 1335-127</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(320.0, 48.4)</td>
+      <td>2.1</td>
+      <td>0.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_1334-127.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_1334...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>M</td>
+      <td>PKS 1329-049</td>
+      <td>Beamed AGN</td>
+      <td>PKS 1329-049</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(321.4, 56.2)</td>
+      <td>3.9</td>
+      <td>10.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_1329-049.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_1329-04...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>U</td>
+      <td>SWIFT J1254.9+1165</td>
+      <td>U3</td>
+      <td>ON 187</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(306.1, 74.5)</td>
+      <td>0.9</td>
+      <td>1.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SWIF...</td>
+      <td>![fig](figures/SED_2comp/SWIFT_J1254.9+1165.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SWIFT_J1254...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>M</td>
+      <td>4C +04.42</td>
+      <td>Beamed AGN</td>
+      <td>4C +04.42</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(284.9, 66.1)</td>
+      <td>0.7</td>
+      <td>1.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4C_+...</td>
+      <td>![fig](figures/SED_2comp/4C_+04.42.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4C_+04.42.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>M</td>
+      <td>FBQS J1159+2914</td>
+      <td>Beamed AGN</td>
+      <td>Ton 599</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(199.4, 78.4)</td>
+      <td>2.1</td>
+      <td>9.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_FBQS...</td>
+      <td>![fig](figures/SED_2comp/FBQS_J1159+2914.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_FBQS_J1159+...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>M</td>
+      <td>7C 1150+3324</td>
+      <td>Beamed AGN</td>
+      <td>B2 1150+33A</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(184.0, 76.0)</td>
+      <td>1.7</td>
+      <td>1.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_7C_1...</td>
+      <td>![fig](figures/SED_2comp/7C_1150+3324.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_7C_1150+332...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>M</td>
+      <td>PKS 1143-696</td>
+      <td>Beamed AGN</td>
+      <td>PKS 1143-696</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(297.3, -7.7)</td>
+      <td>0.3</td>
+      <td>0.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_1143-696.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_1143-69...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>M</td>
+      <td>PKS 1127-14</td>
+      <td>Beamed AGN</td>
+      <td>PKS 1127-14</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(275.2, 43.6)</td>
+      <td>0.5</td>
+      <td>0.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_1127-14.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_1127-14...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>M</td>
+      <td>[HB89] 1039+811</td>
+      <td>Beamed AGN</td>
+      <td>S5 1039+81</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(128.7, 34.8)</td>
+      <td>3.8</td>
+      <td>5.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_1039+811.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_1039...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>U</td>
+      <td>SWIFT J0949.1+4057</td>
+      <td>confused source</td>
+      <td>4C +40.24</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(181.0, 50.3)</td>
+      <td>1.8</td>
+      <td>1.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SWIF...</td>
+      <td>![fig](figures/SED_2comp/SWIFT_J0949.1+4057.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SWIFT_J0949...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>M</td>
+      <td>CGRaBS J0805+6144</td>
+      <td>Beamed AGN</td>
+      <td>TXS 0800+618</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(155.0, 32.4)</td>
+      <td>0.8</td>
+      <td>1.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_CGRa...</td>
+      <td>![fig](figures/SED_2comp/CGRaBS_J0805+6144.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_CGRaBS_J080...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>M</td>
+      <td>B2 0743+25</td>
+      <td>Beamed AGN</td>
+      <td>B2 0743+25</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(194.6, 22.9)</td>
+      <td>1.4</td>
+      <td>2.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_B2_0...</td>
+      <td>![fig](figures/SED_2comp/B2_0743+25.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_B2_0743+25....</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>M</td>
+      <td>PKS 0637-752</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0637-75</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(286.4, -27.2)</td>
+      <td>1.1</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0637-752.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0637-75...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>M</td>
+      <td>[HB89] 0552+398</td>
+      <td>Beamed AGN</td>
+      <td>B2 0552+39A</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(171.7, 7.3)</td>
+      <td>2.1</td>
+      <td>3.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0552+398.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0552...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>M</td>
+      <td>[HB89] 0537-286</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0537-286</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(232.9, -27.3)</td>
+      <td>0.7</td>
+      <td>2.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0537-286.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0537...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>M</td>
+      <td>PKS 0524-460</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0524-460</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(252.0, -33.7)</td>
+      <td>1.6</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0524-460.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0524-46...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>M</td>
+      <td>[HB89] 0403-132</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0403-13</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(205.8, -42.6)</td>
+      <td>0.9</td>
+      <td>0.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0403-132.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0403...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>M</td>
+      <td>4C +50.11</td>
+      <td>Beamed AGN</td>
+      <td>NRAO 150</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(150.4, -1.6)</td>
+      <td>1.1</td>
+      <td>3.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4C_+...</td>
+      <td>![fig](figures/SED_2comp/4C_+50.11.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4C_+50.11.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>M</td>
+      <td>[HB89] 0212+735</td>
+      <td>Beamed AGN</td>
+      <td>S5 0212+73</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(128.9, 12.0)</td>
+      <td>1.5</td>
+      <td>2.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0212+735.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0212...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>U</td>
+      <td>PMN J0145-2733</td>
+      <td>Unknown AGN</td>
+      <td>PKS 0142-278</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(218.0, -78.1)</td>
+      <td>1.9</td>
+      <td>4.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PMN_...</td>
+      <td>![fig](figures/SED_2comp/PMN_J0145-2733.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PMN_J0145-2...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>A</td>
+      <td>ESO 354- G 004</td>
+      <td>Sy1.9</td>
+      <td>PMN J0151-3605</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(251.9, -74.4)</td>
+      <td>0.6</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_ESO_...</td>
+      <td>![fig](figures/SED_2comp/ESO_354-_G_004.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_ESO_354-_G_...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>M</td>
+      <td>4C +33.06</td>
+      <td>Beamed AGN</td>
+      <td>4C +33.06</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(152.2, -21.4)</td>
+      <td>0.6</td>
+      <td>0.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4C_+...</td>
+      <td>![fig](figures/SED_2comp/4C_+33.06.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4C_+33.06.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>M</td>
+      <td>PKS 0706-15</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0706-15</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(228.7, -3.1)</td>
+      <td>1.0</td>
+      <td>0.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0706-15.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0706-15...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>M</td>
+      <td>PKS 0723-008</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0723-008</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(217.7, 7.2)</td>
+      <td>1.1</td>
+      <td>1.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0723-008.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0723-00...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>M</td>
+      <td>2MASX J07332681+5153560</td>
+      <td>Beamed AGN</td>
+      <td>NVSS J073326+515355</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(166.0, 27.3)</td>
+      <td>1.1</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J07332681+51535...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J0733...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>D</td>
+      <td>IGR J13109-5552</td>
+      <td>Sy1</td>
+      <td>PMN J1310-5552</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(305.7, 6.9)</td>
+      <td>0.8</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_IGR_...</td>
+      <td>![fig](figures/SED_2comp/IGR_J13109-5552.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_IGR_J13109-...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>M</td>
+      <td>PMN J1508-4953</td>
+      <td>Beamed AGN</td>
+      <td>PMN J1508-4953</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(324.4, 7.2)</td>
+      <td>0.8</td>
+      <td>1.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PMN_...</td>
+      <td>![fig](figures/SED_2comp/PMN_J1508-4953.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PMN_J1508-4...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>D</td>
+      <td>SGR A*</td>
+      <td>Galactic Center</td>
+      <td>Galactic Centre</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(360.0, -0.0)</td>
+      <td>33.7</td>
+      <td>142.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SGR_...</td>
+      <td>![fig](figures/SED_2comp/SGR_A*.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SGR_A*.png)</td>
+      <td>2comp</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>M</td>
+      <td>PKS 1936-623</td>
+      <td>Beamed AGN</td>
+      <td>PKS 1936-623</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(334.5, -29.5)</td>
+      <td>1.1</td>
+      <td>8.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_1936-623.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_1936-62...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>M</td>
+      <td>SWIFT J1943536.21+211822.9</td>
+      <td>Beamed AGN</td>
+      <td>MG2 J194359+2118</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(57.8, -1.3)</td>
+      <td>2.2</td>
+      <td>1.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SWIF...</td>
+      <td>![fig](figures/SED_2comp/SWIFT_J1943536.21+211...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SWIFT_J1943...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>M</td>
+      <td>B2 2023+33</td>
+      <td>Beamed AGN</td>
+      <td>B2 2023+33</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(73.1, -2.4)</td>
+      <td>0.7</td>
+      <td>1.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_B2_2...</td>
+      <td>![fig](figures/SED_2comp/B2_2023+33.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_B2_2023+33....</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>M</td>
+      <td>RX J2056.6+4940</td>
+      <td>Beamed AGN</td>
+      <td>RGB J2056+496</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(89.3, 2.8)</td>
+      <td>1.2</td>
+      <td>0.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_RX_J...</td>
+      <td>![fig](figures/SED_2comp/RX_J2056.6+4940.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_RX_J2056.6+...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>M</td>
+      <td>RBS 1895</td>
+      <td>Beamed AGN</td>
+      <td>RBS 1895</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(337.4, -55.8)</td>
+      <td>0.4</td>
+      <td>0.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_RBS_...</td>
+      <td>![fig](figures/SED_2comp/RBS_1895.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_RBS_1895.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>M</td>
+      <td>1RXS J225146.9-320614</td>
+      <td>Beamed AGN</td>
+      <td>1RXS J225146.9-320614</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(14.7, -63.6)</td>
+      <td>1.2</td>
+      <td>1.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_1RXS...</td>
+      <td>![fig](figures/SED_2comp/1RXS_J225146.9-320614...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_1RXS_J22514...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>M</td>
+      <td>PKS 0521-36</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0521-36</td>
+      <td>NaN</td>
+      <td>AGN</td>
+      <td>(240.6, -32.7)</td>
+      <td>4.5</td>
+      <td>7.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0521-36.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0521-36...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>M</td>
+      <td>Cen A</td>
+      <td>Beamed AGN</td>
+      <td>Cen A</td>
+      <td>CenA Lobes field</td>
+      <td>RDG</td>
+      <td>(309.5, 19.4)</td>
+      <td>14.5</td>
+      <td>3.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Cen_...</td>
+      <td>![fig](figures/SED_2comp/Cen_A.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Cen_A.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>M</td>
+      <td>3C 120</td>
+      <td>Beamed AGN</td>
+      <td>3C 120</td>
+      <td>NaN</td>
+      <td>RDG</td>
+      <td>(190.3, -27.4)</td>
+      <td>4.1</td>
+      <td>3.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_1...</td>
+      <td>![fig](figures/SED_2comp/3C_120.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_120.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>M</td>
+      <td>NGC 1275</td>
+      <td>Beamed AGN</td>
+      <td>NGC 1275</td>
+      <td>NaN</td>
+      <td>RDG</td>
+      <td>(150.6, -13.3)</td>
+      <td>217.5</td>
+      <td>221.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_NGC_...</td>
+      <td>![fig](figures/SED_2comp/NGC_1275.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_NGC_1275.png)</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>M</td>
+      <td>PKS 2300-18</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2300-18</td>
+      <td>NaN</td>
+      <td>rdg</td>
+      <td>(45.8, -63.7)</td>
+      <td>0.9</td>
+      <td>1.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2300-18.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2300-18...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>D</td>
+      <td>3C 303</td>
+      <td>Sy1</td>
+      <td>3C 303</td>
+      <td>NaN</td>
+      <td>rdg</td>
+      <td>(90.5, 57.5)</td>
+      <td>0.5</td>
+      <td>0.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_3...</td>
+      <td>![fig](figures/SED_2comp/3C_303.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_303.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>D</td>
+      <td>PICTOR A</td>
+      <td>Sy2</td>
+      <td>Pictor A</td>
+      <td>NaN</td>
+      <td>rdg</td>
+      <td>(251.6, -34.7)</td>
+      <td>1.2</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PICT...</td>
+      <td>![fig](figures/SED_2comp/PICTOR_A.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PICTOR_A.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>M</td>
+      <td>QSO B0309+411</td>
+      <td>Beamed AGN</td>
+      <td>B3 0309+411B</td>
+      <td>NaN</td>
+      <td>rdg</td>
+      <td>(149.6, -14.1)</td>
+      <td>0.9</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_QSO_...</td>
+      <td>![fig](figures/SED_2comp/QSO_B0309+411.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_QSO_B0309+4...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>D</td>
+      <td>NGC 4945</td>
+      <td>Sy2</td>
+      <td>NGC 4945</td>
+      <td>NaN</td>
+      <td>sbg</td>
+      <td>(305.3, 13.3)</td>
+      <td>46.8</td>
+      <td>284.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_NGC_...</td>
+      <td>![fig](figures/SED_2comp/NGC_4945.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_NGC_4945.png)</td>
+      <td>User</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>M</td>
+      <td>M 82</td>
+      <td>Starburst galaxy</td>
+      <td>M 82</td>
+      <td>NaN</td>
+      <td>sbg</td>
+      <td>(141.4, 40.6)</td>
+      <td>2.4</td>
+      <td>5.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_M_82...</td>
+      <td>![fig](figures/SED_2comp/M_82.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_M_82.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>D</td>
+      <td>NGC 1068</td>
+      <td>Sy1.9</td>
+      <td>NGC 1068</td>
+      <td>NaN</td>
+      <td>sbg</td>
+      <td>(172.1, -51.9)</td>
+      <td>3.8</td>
+      <td>6.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_NGC_...</td>
+      <td>![fig](figures/SED_2comp/NGC_1068.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_NGC_1068.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>M</td>
+      <td>Circinus Galaxy</td>
+      <td>Sy2</td>
+      <td>Circinus galaxy</td>
+      <td>NaN</td>
+      <td>sey</td>
+      <td>(311.3, -3.8)</td>
+      <td>8.0</td>
+      <td>197.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Circ...</td>
+      <td>![fig](figures/SED_2comp/Circinus_Galaxy.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Circinus_Ga...</td>
+      <td>User</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>M</td>
+      <td>1H 0323+342</td>
+      <td>Beamed AGN</td>
+      <td>1H 0323+342</td>
+      <td>NaN</td>
+      <td>nlsy1</td>
+      <td>(155.7, -18.7)</td>
+      <td>1.2</td>
+      <td>1.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_1H_0...</td>
+      <td>![fig](figures/SED_2comp/1H_0323+342.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_1H_0323+342...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>M</td>
+      <td>3C 380</td>
+      <td>Beamed AGN</td>
+      <td>3C 380</td>
+      <td>NaN</td>
+      <td>css</td>
+      <td>(77.2, 23.5)</td>
+      <td>1.3</td>
+      <td>2.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_3...</td>
+      <td>![fig](figures/SED_2comp/3C_380.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_380.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>M</td>
+      <td>Cas A</td>
+      <td>SNR</td>
+      <td>Cas A</td>
+      <td>NaN</td>
+      <td>snr</td>
+      <td>(111.7, -2.1)</td>
+      <td>63.6</td>
+      <td>8.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Cas_...</td>
+      <td>![fig](figures/SED_2comp/Cas_A.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Cas_A.png)</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>M</td>
+      <td>Tycho SNR</td>
+      <td>SNR</td>
+      <td>Tycho</td>
+      <td>NaN</td>
+      <td>snr</td>
+      <td>(120.1, 1.4)</td>
+      <td>4.1</td>
+      <td>3.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Tych...</td>
+      <td>![fig](figures/SED_2comp/Tycho_SNR.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Tycho_SNR.png)</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>D</td>
+      <td>SNR G068.8+02.6</td>
+      <td>SNR</td>
+      <td>PSR J1952+3252</td>
+      <td>NaN</td>
+      <td>PSR</td>
+      <td>(68.8, 2.8)</td>
+      <td>5.0</td>
+      <td>16.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SNR_...</td>
+      <td>![fig](figures/SED_2comp/SNR_G068.8+02.6.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SNR_G068.8+...</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>D</td>
+      <td>SNR G21.5-00.9</td>
+      <td>SNR</td>
+      <td>PSR J1833-1034</td>
+      <td>NaN</td>
+      <td>PSR</td>
+      <td>(21.5, -0.9)</td>
+      <td>15.8</td>
+      <td>46.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SNR_...</td>
+      <td>![fig](figures/SED_2comp/SNR_G21.5-00.9.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SNR_G21.5-0...</td>
+      <td>2comp</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>F</td>
+      <td>4U 1820-30</td>
+      <td>LMXB</td>
+      <td>PSR J1823-3021A</td>
+      <td>NaN</td>
+      <td>PSR</td>
+      <td>(2.8, -7.9)</td>
+      <td>45.4</td>
+      <td>4930.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4U_1...</td>
+      <td>![fig](figures/SED_2comp/4U_1820-30.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4U_1820-30....</td>
+      <td>2comp</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>F</td>
+      <td>SLX 1744-299</td>
+      <td>LMXB</td>
+      <td>PSR J1747-2958</td>
+      <td>NaN</td>
+      <td>PSR</td>
+      <td>(359.3, -0.8)</td>
+      <td>106.3</td>
+      <td>112.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SLX_...</td>
+      <td>![fig](figures/SED_2comp/SLX_1744-299.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SLX_1744-29...</td>
+      <td>2comp</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>D</td>
+      <td>1RXS J122758.8-485343</td>
+      <td>CV</td>
+      <td>PSR J1227-4853</td>
+      <td>NaN</td>
+      <td>PSR</td>
+      <td>(299.0, 13.8)</td>
+      <td>2.3</td>
+      <td>3.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_1RXS...</td>
+      <td>![fig](figures/SED_2comp/1RXS_J122758.8-485343...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_1RXS_J12275...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>M</td>
+      <td>PSR J1124-5916</td>
+      <td>Pulsar</td>
+      <td>PSR J1124-5916</td>
+      <td>NaN</td>
+      <td>PSR</td>
+      <td>(292.0, 1.8)</td>
+      <td>3.6</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PSR_...</td>
+      <td>![fig](figures/SED_2comp/PSR_J1124-5916.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PSR_J1124-5...</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>M</td>
+      <td>Vela Pulsar</td>
+      <td>Pulsar</td>
+      <td>PSR J0835-4510</td>
+      <td>Vela X field</td>
+      <td>PSR</td>
+      <td>(263.6, -2.8)</td>
+      <td>2093.0</td>
+      <td>895.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Vela...</td>
+      <td>![fig](figures/SED_2comp/Vela_Pulsar.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Vela_Pulsar...</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>M</td>
+      <td>PSR B0540-69</td>
+      <td>Pulsar</td>
+      <td>PSR J0540-6919</td>
+      <td>LMC-Galaxy field</td>
+      <td>PSR</td>
+      <td>(279.7, -31.5)</td>
+      <td>2.9</td>
+      <td>2.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PSR_...</td>
+      <td>![fig](figures/SED_2comp/PSR_B0540-69.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PSR_B0540-6...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>F</td>
+      <td>2MASX J04372814-4711298</td>
+      <td>Sy1</td>
+      <td>PSR J0437-4715</td>
+      <td>NaN</td>
+      <td>PSR</td>
+      <td>(253.4, -42.0)</td>
+      <td>34.5</td>
+      <td>2.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J04372814-47112...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J0437...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>M</td>
+      <td>PSR J1811-1925</td>
+      <td>Pulsar</td>
+      <td>PSR J1811-1925</td>
+      <td>HESS J1809-193 field</td>
+      <td>psr</td>
+      <td>(11.2, -0.4)</td>
+      <td>1.3</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PSR_...</td>
+      <td>![fig](figures/SED_2comp/PSR_J1811-1925.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PSR_J1811-1...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>M</td>
+      <td>Crab</td>
+      <td>Pulsar</td>
+      <td>Crab Nebula$^\dagger$</td>
+      <td>NaN</td>
+      <td>PWN</td>
+      <td>(184.6, -5.8)</td>
+      <td>976.9</td>
+      <td>177.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Crab...</td>
+      <td>![fig](figures/SED_2comp/Crab.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Crab.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>F</td>
+      <td>IGR J17461-2853</td>
+      <td>molecular cloud</td>
+      <td>PWN G0.13-0.11</td>
+      <td>NaN</td>
+      <td>pwn</td>
+      <td>(0.2, -0.1)</td>
+      <td>9.1</td>
+      <td>15.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_IGR_...</td>
+      <td>![fig](figures/SED_2comp/IGR_J17461-2853.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_IGR_J17461-...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>M</td>
+      <td>Cyg X-3</td>
+      <td>HMXB</td>
+      <td>Cyg X-3</td>
+      <td>Cygnus Cocoon field</td>
+      <td>HMB</td>
+      <td>(79.8, 0.6)</td>
+      <td>83.2</td>
+      <td>168.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Cyg_...</td>
+      <td>![fig](figures/SED_2comp/Cyg_X-3.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Cyg_X-3.png)</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>M</td>
+      <td>RX J1826.2-1450</td>
+      <td>HMXB</td>
+      <td>LS 5039</td>
+      <td>NaN</td>
+      <td>HMB</td>
+      <td>(16.9, -1.3)</td>
+      <td>5.0</td>
+      <td>13.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_RX_J...</td>
+      <td>![fig](figures/SED_2comp/RX_J1826.2-1450.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_RX_J1826.2-...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>M</td>
+      <td>2XMM J130247.6-635008</td>
+      <td>HMXB</td>
+      <td>PSR B1259-63</td>
+      <td>NaN</td>
+      <td>HMB</td>
+      <td>(304.2, -1.0)</td>
+      <td>1.7</td>
+      <td>1.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2XMM...</td>
+      <td>![fig](figures/SED_2comp/2XMM_J130247.6-635008...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2XMM_J13024...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>M</td>
+      <td>LS I +61 303</td>
+      <td>HMXB</td>
+      <td>LSI +61 303</td>
+      <td>NaN</td>
+      <td>HMB</td>
+      <td>(135.7, 1.1)</td>
+      <td>35.4</td>
+      <td>72.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_LS_I...</td>
+      <td>![fig](figures/SED_2comp/LS_I_+61_303.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_LS_I_+61_30...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>M</td>
+      <td>Cyg X-1</td>
+      <td>HMXB</td>
+      <td>Cyg X-1</td>
+      <td>NaN</td>
+      <td>hmb</td>
+      <td>(71.4, 3.0)</td>
+      <td>313.5</td>
+      <td>6798.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Cyg_...</td>
+      <td>![fig](figures/SED_2comp/Cyg_X-1.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Cyg_X-1.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>M</td>
+      <td>V395 Car</td>
+      <td>LMXB</td>
+      <td>2S 0921-630</td>
+      <td>NaN</td>
+      <td>lmb</td>
+      <td>(281.8, -9.4)</td>
+      <td>3.1</td>
+      <td>12.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_V395...</td>
+      <td>![fig](figures/SED_2comp/V395_Car.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_V395_Car.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>M</td>
+      <td>Eta Carina</td>
+      <td>XRB</td>
+      <td>Eta Carinae</td>
+      <td>FGES J1036.3-5833 field</td>
+      <td>BIN</td>
+      <td>(287.6, -0.6)</td>
+      <td>5.8</td>
+      <td>175.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_Eta_...</td>
+      <td>![fig](figures/SED_2comp/Eta_Carina.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_Eta_Carina....</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>F</td>
+      <td>4U 2129+12</td>
+      <td>LMXB</td>
+      <td>NGC 7078</td>
+      <td>NaN</td>
+      <td>glc</td>
+      <td>(65.0, -27.3)</td>
+      <td>3.9</td>
+      <td>3.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4U_2...</td>
+      <td>![fig](figures/SED_2comp/4U_2129+12.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4U_2129+12....</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>F</td>
+      <td>XB 1832-330</td>
+      <td>LMXB</td>
+      <td>NGC 6652</td>
+      <td>NaN</td>
+      <td>glc</td>
+      <td>(1.6, -11.4)</td>
+      <td>3.3</td>
+      <td>3.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_XB_1...</td>
+      <td>![fig](figures/SED_2comp/XB_1832-330.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_XB_1832-330...</td>
+      <td>2comp</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>F</td>
+      <td>4U 1746-37</td>
+      <td>LMXB</td>
+      <td>NGC 6441</td>
+      <td>NaN</td>
+      <td>glc</td>
+      <td>(353.5, -5.0)</td>
+      <td>33.7</td>
+      <td>39.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4U_1...</td>
+      <td>![fig](figures/SED_2comp/4U_1746-37.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4U_1746-37....</td>
+      <td>2comp</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>M</td>
+      <td>ESO 520-27</td>
+      <td>GC</td>
+      <td>Terzan 5</td>
+      <td>NaN</td>
+      <td>glc</td>
+      <td>(3.8, 1.7)</td>
+      <td>55.9</td>
+      <td>160.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_ESO_...</td>
+      <td>![fig](figures/SED_2comp/ESO_520-27.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_ESO_520-27....</td>
+      <td>2comp</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>F</td>
+      <td>4U 1722-30</td>
+      <td>LMXB</td>
+      <td>Terzan 2</td>
+      <td>NaN</td>
+      <td>glc</td>
+      <td>(356.3, 2.3)</td>
+      <td>6.5</td>
+      <td>7.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4U_1...</td>
+      <td>![fig](figures/SED_2comp/4U_1722-30.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4U_1722-30....</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>U</td>
+      <td>GX 340+0</td>
+      <td>LMXB</td>
+      <td>4U 1642-45</td>
+      <td>NaN</td>
+      <td>unk</td>
+      <td>(339.6, -0.0)</td>
+      <td>40.9</td>
+      <td>272.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_GX_3...</td>
+      <td>![fig](figures/SED_2comp/GX_340+0.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_GX_340+0.png)</td>
+      <td>2comp</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>U</td>
+      <td>SAX J1808.4-3658</td>
+      <td>LMXB</td>
+      <td>NaN</td>
+      <td>SWIFT J1808.5-3655</td>
+      <td>NaN</td>
+      <td>(355.3, -8.2)</td>
+      <td>1.9</td>
+      <td>1.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_SAX_...</td>
+      <td>![fig](figures/SED_2comp/SAX_J1808.4-3658.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_SAX_J1808.4...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>U</td>
+      <td>XTE J1652-453</td>
+      <td>LMXB</td>
+      <td>NaN</td>
+      <td>SWIFT J1652.3-4520</td>
+      <td>NaN</td>
+      <td>(340.6, -0.7)</td>
+      <td>6.5</td>
+      <td>7.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_XTE_...</td>
+      <td>![fig](figures/SED_2comp/XTE_J1652-453.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_XTE_J1652-4...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>M</td>
+      <td>PKS 2005-489</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2005-489</td>
+      <td>NaN</td>
+      <td>BLL</td>
+      <td>(350.4, -32.6)</td>
+      <td>2.0</td>
+      <td>1.5</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2005-489.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2005-48...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>M</td>
+      <td>87GB 050246.4+673341</td>
+      <td>Beamed AGN</td>
+      <td>1ES 0502+675</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(143.8, 15.9)</td>
+      <td>1.7</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_87GB...</td>
+      <td>![fig](figures/SED_2comp/87GB_050246.4+673341....</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_87GB_050246...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>M</td>
+      <td>2MASX J03252346-5635443</td>
+      <td>Beamed AGN</td>
+      <td>1RXS J032521.8-563543</td>
+      <td>NaN</td>
+      <td>bll</td>
+      <td>(270.8, -49.8)</td>
+      <td>0.7</td>
+      <td>0.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J03252346-56354...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J0325...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>M</td>
+      <td>PKS 0607-549</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0607-549</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(263.2, -27.9)</td>
+      <td>0.5</td>
+      <td>1.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_0607-549.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_0607-54...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>M</td>
+      <td>B2 0920+39</td>
+      <td>Beamed AGN</td>
+      <td>B2 0920+39</td>
+      <td>NaN</td>
+      <td>bcu</td>
+      <td>(183.9, 45.5)</td>
+      <td>0.8</td>
+      <td>1.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_B2_0...</td>
+      <td>![fig](figures/SED_2comp/B2_0920+39.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_B2_0920+39....</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>M</td>
+      <td>8C 1849+670</td>
+      <td>Beamed AGN</td>
+      <td>S4 1849+67</td>
+      <td>NaN</td>
+      <td>FSRQ</td>
+      <td>(97.5, 25.0)</td>
+      <td>2.7</td>
+      <td>114.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_8C_1...</td>
+      <td>![fig](figures/SED_2comp/8C_1849+670.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_8C_1849+670...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>M</td>
+      <td>RBS 0315</td>
+      <td>Beamed AGN</td>
+      <td>TXS 0222+185</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(151.8, -38.9)</td>
+      <td>1.6</td>
+      <td>1.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_RBS_...</td>
+      <td>![fig](figures/SED_2comp/RBS_0315.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_RBS_0315.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>M</td>
+      <td>4C +32.14</td>
+      <td>Beamed AGN</td>
+      <td>NRAO 140</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(158.9, -18.7)</td>
+      <td>1.6</td>
+      <td>2.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_4C_+...</td>
+      <td>![fig](figures/SED_2comp/4C_+32.14.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_4C_+32.14.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>M</td>
+      <td>PKS 2008-159</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2008-159</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(27.2, -24.7)</td>
+      <td>0.9</td>
+      <td>0.7</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2008-159.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2008-15...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>M</td>
+      <td>PKS 2052-47</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2052-47</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(352.6, -40.4)</td>
+      <td>3.4</td>
+      <td>3.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2052-47.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2052-47...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>M</td>
+      <td>PKS 2145+06</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2145+06</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(63.7, -34.2)</td>
+      <td>0.8</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2145+06.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2145+06...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>M</td>
+      <td>[HB89] 0834-201</td>
+      <td>Beamed AGN</td>
+      <td>PKS 0834-20</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(243.7, 12.1)</td>
+      <td>1.1</td>
+      <td>1.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_[HB8...</td>
+      <td>![fig](figures/SED_2comp/[HB89]_0834-201.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_[HB89]_0834...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>M</td>
+      <td>1RXS J174036.3+521155</td>
+      <td>Beamed AGN</td>
+      <td>4C +51.37</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(79.6, 31.8)</td>
+      <td>0.7</td>
+      <td>0.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_1RXS...</td>
+      <td>![fig](figures/SED_2comp/1RXS_J174036.3+521155...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_1RXS_J17403...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>M</td>
+      <td>2MASX J06230765-6436211</td>
+      <td>Beamed AGN</td>
+      <td>RX J062308.0-643619</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(274.2, -27.4)</td>
+      <td>1.7</td>
+      <td>1.9</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J06230765-64362...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J0623...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>M</td>
+      <td>87GB 162418.8+435342</td>
+      <td>Beamed AGN</td>
+      <td>MG4 J162551+4346</td>
+      <td>NaN</td>
+      <td>fsrq</td>
+      <td>(68.6, 44.0)</td>
+      <td>1.0</td>
+      <td>0.8</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_87GB...</td>
+      <td>![fig](figures/SED_2comp/87GB_162418.8+435342....</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_87GB_162418...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>M</td>
+      <td>PKS 2331-240</td>
+      <td>Beamed AGN</td>
+      <td>PKS 2331-240</td>
+      <td>NaN</td>
+      <td>agn</td>
+      <td>(39.7, -72.4)</td>
+      <td>1.2</td>
+      <td>1.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2331-240.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2331-24...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>D</td>
+      <td>PKS 2153-69</td>
+      <td>Sy2</td>
+      <td>PKS 2153-69</td>
+      <td>NaN</td>
+      <td>rdg</td>
+      <td>(321.4, -40.6)</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PKS_...</td>
+      <td>![fig](figures/SED_2comp/PKS_2153-69.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PKS_2153-69...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>D</td>
+      <td>3C 111.0</td>
+      <td>Sy1.2</td>
+      <td>3C 111</td>
+      <td>NaN</td>
+      <td>rdg</td>
+      <td>(161.6, -8.8)</td>
+      <td>1.1</td>
+      <td>1.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_1...</td>
+      <td>![fig](figures/SED_2comp/3C_111.0.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_111.0.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>M</td>
+      <td>3C 309.1</td>
+      <td>Beamed AGN</td>
+      <td>3C 309.1</td>
+      <td>NaN</td>
+      <td>css</td>
+      <td>(110.0, 42.1)</td>
+      <td>0.6</td>
+      <td>1.0</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_3C_3...</td>
+      <td>![fig](figures/SED_2comp/3C_309.1.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_3C_309.1.png)</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>M</td>
+      <td>PSR J1420-6048</td>
+      <td>Pulsar</td>
+      <td>PSR J1420-6048</td>
+      <td>HESS J1420-607 field</td>
+      <td>PSR</td>
+      <td>(313.5, 0.2)</td>
+      <td>2.4</td>
+      <td>6.4</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PSR_...</td>
+      <td>![fig](figures/SED_2comp/PSR_J1420-6048.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PSR_J1420-6...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>M</td>
+      <td>PSR J1723-2837</td>
+      <td>Pulsar</td>
+      <td>PSR J1723-2837</td>
+      <td>NaN</td>
+      <td>psr</td>
+      <td>(357.3, 4.1)</td>
+      <td>1.2</td>
+      <td>1.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_PSR_...</td>
+      <td>![fig](figures/SED_2comp/PSR_J1723-2837.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_PSR_J1723-2...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>U</td>
+      <td>CGCG 147-020</td>
+      <td>Sy2</td>
+      <td>NaN</td>
+      <td>SWIFT J0725.8+3000</td>
+      <td>unk</td>
+      <td>(188.3, 20.0)</td>
+      <td>0.7</td>
+      <td>0.6</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_CGCG...</td>
+      <td>![fig](figures/SED_2comp/CGCG_147-020.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_CGCG_147-02...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>U</td>
+      <td>2MASX J14080674-3023537</td>
+      <td>Sy1.9</td>
+      <td>NaN</td>
+      <td>SWIFT J1408.1-3024</td>
+      <td>unk</td>
+      <td>(321.9, 29.8)</td>
+      <td>1.1</td>
+      <td>1.3</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_2MAS...</td>
+      <td>![fig](figures/SED_2comp/2MASX_J14080674-30235...</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_2MASX_J1408...</td>
+      <td>LP</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>U</td>
+      <td>XTE J1817-330</td>
+      <td>LMXB</td>
+      <td>NaN</td>
+      <td>SWIFT J1817.8-3301</td>
+      <td>unk</td>
+      <td>(360.0, -7.9)</td>
+      <td>2.7</td>
+      <td>3.1</td>
+      <td>![fig](fitting_Sherpa/LogParabola_BATname/fig_...</td>
+      <td>![fig](fitting_Sherpa/BPL_index1_free/fig_XTE_...</td>
+      <td>![fig](figures/SED_2comp/XTE_J1817-330.png)</td>
+      <td>![fig](fitting_Sherpa/SED_user/fig_XTE_J1817-3...</td>
+      <td>LP</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="ta1">
+  <caption>Point sources. </caption>
+
+  <tr>
+    <th class="fixed01">見出し</th>
+    <th class="fixed02">見出し</th>
+    <th class="fixed02">見出し</th>
+    <th class="fixed02">SED</th>
+    <th class="fixed02">見出し</th>
+    <th class="fixed02">見出し</th>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>[HB89] 0537-441</td>
+    <td>テキスト</td>
+    <td> <img src="figures/SED_sherpa_BPL/fig_[HB89]_0537-441.png" alt=""> </td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+  <tr>
+    <th class="fixed02">見出し</th>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+    <td>テキスト</td>
+  </tr>
+</table>
+
+
+</section>
+
+</body>
