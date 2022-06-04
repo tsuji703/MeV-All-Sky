@@ -1,20 +1,62 @@
+@charset "utf-8";
+
+/* Design
+---------------------------------------------------------------------------*/
+html,body {height: 100%;}
+body {
+	margin: 30px;
+	padding: 10px;
+	color: #000000 ;	/* text color*/
+	font-family: sans-serif;	/* font style */
+	font-size: 16px;	/* font size */
+	line-height: 1.5;		/* */
+	background: #FFF ;	/* background color */
+	-webkit-text-size-adjust: none;
+}
+ol {padding-left: 40px;padding-bottom: 15px;}
+/*
+ul {list-style-type: circle; }
+img {border: none; max-width: 100%;height: auto;vertical-align: middle;}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+iframe {width: 100%;}
+*/
+
+@keyframes opa1 {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+/* Table
+Ref) https://since-inc.jp/blog/8675
+---------------------------------------------------------------------------*/
 table{
-  width: 1800px;
+  /*width: "100%";*/
+  border-collapse:  collapse;
+}
+th{
+  font-weight: bold;
+  white-space: nowrap;
 }
 th,td{
-  width: 300px;
-  height: 100px;
+  /*width: 300px;*/
+  height: 50px;
   vertical-align: middle;
-  padding: 0 15px;
-  border: 1px solid #ccc;
+  padding: 5px;
+  border: 1px solid #000000;
+  text-align:  center;
 }
 .fixed01,
 .fixed02{
   position: sticky;
   top: 0;
   left: 0;
+  /*
   color: #fff;
   background: #333;
+  */
+  color: #000000  ;
+  background: #CCCCCC	;
+  font-weight: bold;
   &:before{
     content: "";
     position: absolute;
@@ -22,7 +64,8 @@ th,td{
     left: -1px;
     width: 100%;
     height: 100%;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc; */
+    border: 1px solid #000000 ;
   }
 }
 .fixed01{
@@ -31,3 +74,24 @@ th,td{
 .fixed02{
   z-index: 1;
 }
+
+/*PAGE TOP
+---------------------------------------------------------------------------*/
+.scroll-show {display: block;}
+.scroll a {
+	display: block;text-decoration: none;text-align: center;
+	width: 50px;		/*witdth*/
+	line-height: 50px;	/* height */
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	color: #fff;		/* text color */
+	background: rgba(0,0,0,0.4);	/* background */
+	border: 1px solid #fff;	/* frame line width, line style, color */
+}
+/* scroll */
+.scroll a:hover {
+	background: rgba(0,0,0,0.8);	/* background */
+}
+
+
