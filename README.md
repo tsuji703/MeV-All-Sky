@@ -1,9 +1,7 @@
-# MeV All Sky
-
-### 1. Galactic Diffuse Emission
+# 1. Galactic Diffuse Emission
 
 
-### 2. MeV Source
+# 2. MeV Gamma-ray Source
 
 - latest
   - [Table of all sources](https://tsuji703.github.io/MeV-All-Sky/files/MeV_all_source.html)
@@ -21,5 +19,5 @@
   - [Extended source](https://github.com/tsuji703/MeV-All-Sky/blob/main/files/MeV_extended_source.md)
 
 
-### 3. Extragalactic Emission (Cosmic Gamma-ray Background)
+# 3. Extragalactic Emission (Cosmic Gamma-ray Background)
 
