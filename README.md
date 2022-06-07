@@ -6,9 +6,7 @@
 ### 2. MeV Source
 
 - latest
-  - [Table of all sources](https://github.com/tsuji703/MeV-All-Sky/blob/main/files/MeV_all_source.md)
-  - [html](https://tsuji703.github.io/MeV-All-Sky/files/MeV_all_source.html)
-  - [html2](https://tsuji703.github.io/MeV-All-Sky/MeV_all_source.html)
+  - [Table of all sources](https://tsuji703.github.io/MeV-All-Sky/files/MeV_all_source.html)
   - Point source catalog: [fits](files/catalog/crossmatch_latest.fits), [csv](files/catalog/crossmatch_latest.csv)
   - Extended source catalog: [fits](files/catalog/crossmatch_latest_extended.fits), [csv](files/catalog/crossmatch_latest_extended.csv)
 
