@@ -18,7 +18,7 @@
   - [Extended source](https://github.com/tsuji703/MeV-All-Sky/blob/main/files/MeV_extended_source.md)
 -->
 
-# MeV Gamma-ray all-sky map
+# MeV Gamma-ray All-Sky Map
 
 To be updated...
 
