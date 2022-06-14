@@ -31,9 +31,9 @@ This catalog is based on <a href="https://iopscience.iop.org/article/10.3847/153
 (cross-match between the <a href="https://swift.gsfc.nasa.gov/results/bs105mon/">105-month Swift-BAT</a>
 and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi-LAT</a> catalogs).
 <br>
-<br>
 <!-- <mark> !! for 2-comp SED, non-PL is not working? e.g., Vela pulsar. </mark> <br> (2022-06-07) solved. conversion of "expfactor" in MeV -->
-"Flag" column in the tables indicates:
+<ul>
+<li>"Flag" column in the tables indicates: </li>
 <ul class="disc">
   <li> M: Matched source.</li>
   <li> F: False-matched source.</li>
@@ -41,11 +41,17 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
   <li> A: Ambiguous match.</li>
   <li> U: Unidentified source.</li>
 </ul>
-"Inner Gal. region" column indicates if the sources is located within the innter Galactic region of \(|l| \leq 60^\circ \) and \(|b| \leq 10^\circ \).
-<br>
-"Model" colum indicates the model used to fit the SED.
-<br>
-SEDs are fitted with the following models: log parabola (LP), broken power law (BPL), two-component model (i.e., a superposition of the best-fit models of the Swift-BAT and Fermi-LAT catalogs), source-dependent model.
+<li> "Inner Gal. region" column indicates if the sources is located within the innter Galactic region of \(|l| \leq 60^\circ \) and \(|b| \leq 10^\circ \). </li>
+<li> "Model" colum indicates the model used to fit the SED. </li>
+<li> SEDs are fitted with the following models:  </li>
+  <ul>
+    <li> LP: Log parabola.  </li>
+    <li> BPL: Broken power law. </li>
+    <li> 2-comp: Two-component model. A superposition of the best-fit models in the Swift-BAT and Fermi-LAT catalogs. </li>
+    <li> Source-dependent model: Physical model is applied based on the literature. Adopted only for sources which are not well fitted by any of models above (i.e., Circinus Galaxy, MSH 15-52, and NGC 4945). </li>
+  </ul>
+</ul>
+
 
 <!--  ############################## -->
 <!--  ############################## -->
@@ -80,7 +86,7 @@ SEDs are fitted with the following models: log parabola (LP), broken power law (
         <th class="fixed02">Flag</th>
         <th class="fixed02">Swift-BAT category</th>
         <th class="fixed02">Fermi name</th>
-        <th class="fixed02">Fermi name2</th>
+        <th class="fixed02">Fermi name (2)</th>
         <th class="fixed02">Fermi category</th>
         <th class="fixed02">Galactic coordinate</th>
         <th class="fixed02">Model</th>
@@ -1653,7 +1659,7 @@ SEDs are fitted with the following models: log parabola (LP), broken power law (
               <td> &mdash; </td>
               <td>sbg</td>
               <td>(305.3, 13.3)</td>
-              <td>User</td>
+              <td>Source-dependent</td>
               <td>False</td>
               <td><img src="figures/SED_LogParabola/fig_NGC_4945.png" alt="fig"></td>
               <td><img src="figures/SED_BPL/fig_NGC_4945.png" alt="fig"></td>
@@ -1701,7 +1707,7 @@ SEDs are fitted with the following models: log parabola (LP), broken power law (
               <td> &mdash; </td>
               <td>sey</td>
               <td>(311.3, -3.8)</td>
-              <td>User</td>
+              <td>Source-dependent</td>
               <td>True</td>
               <td><img src="figures/SED_LogParabola/fig_Circinus_Galaxy.png" alt="fig"></td>
               <td><img src="figures/SED_BPL/fig_Circinus_Galaxy.png" alt="fig"></td>
@@ -2764,7 +2770,7 @@ SEDs are fitted with the following models: log parabola (LP), broken power law (
         <td>MSH 15-52</td>
         <td>PWN</td>
         <td>(320.3, -1.2)</td>
-        <td>User</td>
+        <td>Source-dependent</td>
         <td>True</td>
         <td><img src="figures/SED_LogParabola/fig_MSH_15-52.png" alt="fig"></td>
         <td><img src="figures/SED_BPL/fig_MSH_15-52.png" alt="fig"></td>
