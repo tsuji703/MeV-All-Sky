@@ -33,6 +33,11 @@ To be updated...
 
 ## 1. Galactic Diffuse Emission
 
+- Model 1: [Ackermann et al. 2012](https://iopscience.iop.org/article/10.1088/0004-637X/750/1/3). `SS_Z4_R20_T150_C54` model in Ackermann et al. 2012. [galdef-1](files/allsky/)
+- Model 2: [Olrando 2018; DRE model](http://doi.org/10.1093/mnras/stx3280)
+- Model 3: [Olrando 2018; DRELowV model](http://doi.org/10.1093/mnras/stx3280)
+
+
 ## 2. MeV Gamma-ray Source
 
 ## 3. Extragalactic Emission (Cosmic Gamma-ray Background)
