@@ -46,7 +46,9 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 - FITS file: [Source-fits](files/allsky/data_allsky_source.fits)
 
-[MeV gamma-ray source map](files/allsky/figure_allsky_source_2.pdf)
+![MeV gamma-ray source map](files/allsky/figure_allsky_source_2.pdf)
+
+
 
 ## 3. Extragalactic Emission (Cosmic Gamma-ray Background)
 
