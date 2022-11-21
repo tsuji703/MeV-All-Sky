@@ -38,9 +38,9 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 ## 1. Galactic Diffuse Emission
 
-| Model | Notes | Galdef file | FITS fils |
-|---|---|---|---|
-| 1 | [Ackermann et al. 2012](https://iopscience.iop.org/article/10.1088/0004-637X/750/1/3). `SS_Z4_R20_T150_C54` model in Ackermann et al. 2012. | [galdef-1](files/allsky/galdef_54_0abb001h) | [GDE-fits-Model1](files/allsky/data_allsky_galactic_Ackermann.fits)
+| Model | Notes | Map | Galdef file | FITS fils |
+|---|---|---|---|---|
+| 1 | [Ackermann et al. 2012](https://iopscience.iop.org/article/10.1088/0004-637X/750/1/3). `SS_Z4_R20_T150_C54` model in Ackermann et al. 2012. | <img src="files/allsky/figure_allsky_galactic.png" width="60%"> | [galdef-1](files/allsky/galdef_54_0abb001h) | [GDE-fits-Model1](files/allsky/data_allsky_galactic_Ackermann.fits)
 | 2 | [Olrando 2018; DRE model](http://doi.org/10.1093/mnras/stx3280) | [galdef-2](files/allsky/galdef_54_0abb001j) |
 | 3 | [Olrando 2018; DRELowV model](http://doi.org/10.1093/mnras/stx3280) | [galdef-3](files/allsky/galdef_54_0abb001i) | 
 
@@ -50,7 +50,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 - FITS file: [Source-fits](files/allsky/data_allsky_source.fits)
 
 ![MeV gamma-ray source map](files/allsky/figure_allsky_source_2.png)
-<img src="files/allsky/figure_allsky_source_2.png" width="100px">
+<img src="files/allsky/figure_allsky_source_2.png" width="60%">
 
 For visibility, nside of 32 is shown here. 
 
@@ -58,6 +58,8 @@ For visibility, nside of 32 is shown here.
 ## 3. Extragalactic Emission (Cosmic Gamma-ray Background)
 
 - FITS file: [CGB-fits](files/allsky/data_cgb_source.fits)
+
+<img src="files/allsky/figure_allsky_cgb.png" width="60%">
 
 
 ---
