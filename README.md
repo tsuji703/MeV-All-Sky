@@ -30,7 +30,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 # MeV Gamma-ray All-Sky Map
 
 
-- FITS file: [Allsky-fits-Model1](files/allsky/data_allsky_total.fits) (Model 1 for GDE)
+- FITS file: [Allsky-fits-Model1](files/allsky/data_allsky_total_Ackermann.fits) (Model 1 for GDE)
 
 
 ## 1. Galactic Diffuse Emission
@@ -46,7 +46,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 - FITS file: [Source-fits](files/allsky/data_allsky_source.fits)
 
-![MeV gamma-ray source map](files/allsky/figure_allsky_source_2.pdf)
+![MeV gamma-ray source map](files/allsky/figure_allsky_source_2.png)
 
 
 
