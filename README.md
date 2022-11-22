@@ -43,8 +43,8 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 | Model | Notes | Map | Galdef file | FITS fils |
 |---|---|---|---|---|
 | 1 | `SS_Z4_R20_T150_C54` model in [Ackermann et al. 2012](https://iopscience.iop.org/article/10.1088/0004-637X/750/1/3). | <img src="files/allsky/figure_allsky_galactic.png" width="100%"> | [galdef-1](files/allsky/galdef_54_0abb001h) | [GDE-fits-Model1](files/allsky/data_allsky_galactic_Ackermann.fits)
-| 2 | DRE (diffusion and reacceleration) model in [Olrando 2018](http://doi.org/10.1093/mnras/stx3280) | | [galdef-2](files/allsky/galdef_54_0abb001j) |
-| 3 | DRELowV model [Olrando 2018](http://doi.org/10.1093/mnras/stx3280) | | [galdef-3](files/allsky/galdef_54_0abb001i) | 
+| 2 | DRE (diffusion and reacceleration) model in [Olrando 2018](http://doi.org/10.1093/mnras/stx3280) | <img src="files/allsky/figure_allsky_galactic_Orlando_DRE.png" width="100%"> | [galdef-2](files/allsky/galdef_54_0abb001j) |
+| 3 | DRELowV model [Olrando 2018](http://doi.org/10.1093/mnras/stx3280) | <img src="files/allsky/figure_allsky_galactic_Olrando_Vlow.png" width="100%"> | [galdef-3](files/allsky/galdef_54_0abb001i) | 
 
 
 ## 2. MeV Gamma-ray Source
