@@ -29,12 +29,13 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 # MeV Gamma-ray All-Sky Map
 
+Preliminary page is [here](files/allsky/Table_allsky.md).
 
 - FITS file: [Allsky-fits-Model1](files/allsky/data_allsky_total_Ackermann.fits) (Model 1 for GDE)
 - Flux is integrated over 1-10 MeV and in units of erg/cm2/s.
-- HEALPix (<a href="https://healpix.sourceforge.io/">link</a> and <a href="https://healpy.readthedocs.io/en/latest/">HealPy</a> ) format
+- HEALPix (<a href="https://healpix.sourceforge.io/">link</a> and <a href="https://healpy.readthedocs.io/en/latest/">HealPy</a>) format
   - Nside is 64
- 
+
 <img src="files/allsky/figure_allsky_total.png" width="60%">
 
 
@@ -44,7 +45,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 |---|---|---|---|---|
 | 1 | `SS_Z4_R20_T150_C54` model in [Ackermann et al. 2012](https://iopscience.iop.org/article/10.1088/0004-637X/750/1/3). | <img src="files/allsky/figure_allsky_galactic.png" width="100%"> | [galdef-1](files/allsky/galdef_54_0abb001h) | [GDE-fits-Model1](files/allsky/data_allsky_galactic_Ackermann.fits)
 | 2 | DRE (diffusion and reacceleration) model in [Olrando 2018](http://doi.org/10.1093/mnras/stx3280) | <img src="files/allsky/figure_allsky_galactic_Orlando_DRE.png" width="100%"> | [galdef-2](files/allsky/galdef_54_0abb001j) |
-| 3 | DRELowV model [Olrando 2018](http://doi.org/10.1093/mnras/stx3280) | <img src="files/allsky/figure_allsky_galactic_Orlando_DREVlow.png" width="100%"> | [galdef-3](files/allsky/galdef_54_0abb001i) | 
+| 3 | DRELowV model [Olrando 2018](http://doi.org/10.1093/mnras/stx3280) | <img src="files/allsky/figure_allsky_galactic_Orlando_DREVlow.png" width="100%"> | [galdef-3](files/allsky/galdef_54_0abb001i) |
 
 
 ## 2. MeV Gamma-ray Source
@@ -53,7 +54,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 <img src="files/allsky/figure_allsky_source_2.png" width="60%">
 
-For visibility, nside of 32 is shown here. 
+For visibility, nside of 32 is shown here.
 
 
 ## 3. Extragalactic Emission (Cosmic Gamma-ray Background)

@@ -75,6 +75,36 @@ th,td{
   z-index: 1;
 }
 
+.sorttbl{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+.sorttbl tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.sorttbl th:first-child,
+.sorttbl td:first-child{
+    padding-left: 16px;
+}
+.sorttbl td,
+.sorttbl th{
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.sorttbl th{
+    color: #fff!important;
+    background-color: #616161!important;
+}
+
 /*PAGE TOP
 ---------------------------------------------------------------------------*/
 .scroll-show {display: block;}
