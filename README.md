@@ -65,7 +65,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 
 
-
+<!--
 Preliminary page is [here](files/allsky/Table_allsky.md).
 
 
@@ -103,6 +103,8 @@ For visibility, nside of 32 is shown here.
 - FITS file: [CGB-fits](files/allsky/data_cgb_source.fits)
 
 <img src="files/allsky/figure_allsky_cgb.png" width="60%">
+
+-->
 
 
 ---
