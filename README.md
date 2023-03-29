@@ -34,7 +34,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
   - Nside is 64 (otherwise mentioned)
 
 ### Latest
-- [Table of all-sky maps]()
+- [Table of all-sky maps](files/allsky/Table_allsky.md)
 
 <!--
 ## All-sky (total)
