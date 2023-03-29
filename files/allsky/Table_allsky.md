@@ -1,4 +1,3 @@
-# All-sky map
 
 
 ## All-sky (total)
