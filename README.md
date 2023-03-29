@@ -33,7 +33,10 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 - Maps are in HEALPix (<a href="https://healpix.sourceforge.io/">link</a> and <a href="https://healpy.readthedocs.io/en/latest/">HealPy</a>) format
   - Nside is 64 (otherwise mentioned)
 
+### Latest
+- [Table of all-sky maps]()
 
+<!--
 ## All-sky (total)
 
 | id | Notes | 1-10 MeV | 0.1-1 MeV | 10-100 MeV | FITS
@@ -63,6 +66,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 | 1 | COMPTEL | ![img](files/allsky/figure_allsky_1.0-10.0MeV_cgb.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_cgb.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_cgb.png)|
 | 2 | SMM | ![img](files/allsky/figure_allsky_1.0-10.0MeV_cgb_SMM.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_cgb_SMM.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_cgb_SMM.png) COMPTEL is better in >10 MeV ? |
 
+-->
 
 
 <!--
