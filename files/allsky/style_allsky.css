@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* Design
+---------------------------------------------------------------------------*/
+html,body {height: 100%;}
+body {
+	margin: 30px;
+	padding: 10px;
+	color: #000000 ;	/* text color*/
+	font-family: sans-serif;	/* font style */
+	font-size: 16px;	/* font size */
+	line-height: 1.5;		/* */
+	background: #FFF ;	/* background color */
+	-webkit-text-size-adjust: none;
+}
+ol {padding-left: 40px;padding-bottom: 15px;}
+/*
+ul {list-style-type: circle; }
+img {border: none; max-width: 100%;height: auto;vertical-align: middle;}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+iframe {width: 100%;}
+*/
+
+@keyframes opa1 {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+/* Table
+Ref) https://since-inc.jp/blog/8675
+---------------------------------------------------------------------------*/
+table{
+  /*width: "100%";*/
+  border-collapse:  collapse;
+}
+th{
+  font-weight: bold;
+  white-space: nowrap;
+}
+th,td{
+  /*width: 300px;*/
+  height: 50px;
+  vertical-align: middle;
+  padding: 5px;
+  border: 1px solid #000000;
+  text-align:  center;
+}
+
+/* style (2) */
+.example1{
+    width: 100%;
+    border: "1" ;
+    /*table-layout: fixed; */
+}
+.example1 td:first-child{
+    width: 100px;
+}
+
+/* style (1) */
+.sorttbl{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+.sorttbl tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.sorttbl th:first-child,
+.sorttbl td:first-child{
+    padding-left: 16px;
+}
+.sorttbl td,
+.sorttbl th{
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.sorttbl th{
+    color: #fff!important;
+    background-color: #616161!important;
+}
+
+/*PAGE TOP
+---------------------------------------------------------------------------*/
+.scroll-show {display: block;}
+.scroll a {
+	display: block;text-decoration: none;text-align: center;
+	width: 50px;		/*witdth*/
+	line-height: 50px;	/* height */
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	color: #fff;		/* text color */
+	background: rgba(0,0,0,0.4);	/* background */
+	border: 1px solid #fff;	/* frame line width, line style, color */
+}
+/* scroll */
+.scroll a:hover {
+	background: rgba(0,0,0,0.8);	/* background */
+}
+
+/* Misc
+---------------------------------------------------------------------------*/
+<span style="letter-spacing: -0.2em;">——</span>
+
+
