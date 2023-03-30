@@ -40,7 +40,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
   3. Cosmic gamma-ray background or extragalactic diffuse emission ([Weidenspointner et al. 2000 (COMPTEL)](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..467W/abstract) and [Watanabe 2000 (SMM)](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..471W/abstract))
 
 ### Latest
-- [Table of all-sky maps](files/allsky/Table_allsky.md)
+- [Table of all-sky maps](files/allsky/Table_allsky.html)
 
 <!--
 ## All-sky (total)
