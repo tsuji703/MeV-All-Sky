@@ -41,6 +41,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 ### Latest
 - [Table of all-sky maps](files/allsky/Table_allsky.html)
+- [2](https://tsuji703.github.io/MeV-All-Sky/files/allsky/Table_allsky.html)
 
 <!--
 ## All-sky (total)
