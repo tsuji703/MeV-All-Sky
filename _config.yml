@@ -9,13 +9,15 @@ title: MeV gamma-ray all sky
 #description: This webpage describes a study of MeV gamma-ray all sky.
 description: This page provides materials in the MeV gamma-ray sky, source catalog and all-sky maps. The source catalog is produced by a cross-matching of the hard X-ray (by Swift-BAT) and GeV gamma-ray (Fermi-LAT) catalogs. The all-sky maps made use of GALPROP for Galactic diffuse emission, the source catalog, and cosmic gamma-ray background (CGB) model by COMPTEL and SMM.
 
-lsi: false
-safe: true
-source: [your repo's top level directory]
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
+logo: files/allsky/figure_allsky_total_Ackermann.png
+
+#lsi: false
+#safe: true
+#source: [your repo's top level directory]
+#incremental: false
+#highlighter: rouge
+#gist:
+#  noscript: false
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
