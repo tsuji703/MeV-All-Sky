@@ -40,7 +40,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
   3. Cosmic gamma-ray background or extragalactic diffuse emission ([Weidenspointner et al. 2000 (COMPTEL)](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..467W/abstract) and [Watanabe 2000 (SMM)](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..471W/abstract))
 
 - Notes
-  - Flux is integrated over four energy bands (1-10, 0.1-1, 10-100, and 0.2-5 MeV) and in units of erg/cm$^2$/s.
+  - Flux is integrated over four energy bands (1-10, 0.1-1, 10-100, and 0.2-5 MeV) and in units of erg/cm2/s.
   - Maps are in HEALPix (<a href="https://healpix.sourceforge.io/">link</a> and <a href="https://healpy.readthedocs.io/en/latest/">HealPy</a>) format. Nside is 64 (otherwise mentioned)
   - [GALPROP](https://galprop.stanford.edu/) is used for calculaion of Galactic diffuse emission
 
@@ -48,13 +48,8 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 ### Latest
 - [Table of all-sky maps](files/allsky/Table_allsky.html)
+- [md test](files/allsky/Table_allsky.md)
 
-| id | Notes | 1-10 MeV | 0.1-1 MeV | 10-100 MeV | FITS
-| ---|---    | ---      | ---       | --- |---
-|   | **COMPTEL** for CGB  |   |   | |  [total_allsky.zip](files/allsky/zip_total_COMPTELcgb/) |
-| 1  | Ackermann+ 2012 | ![img](files/allsky/figure_allsky_1.0-10.0MeV_total_Ackermann.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_total_Ackermann.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_total_Ackermann.png) |
-| 2  | Olrando 2018 DRE | ![img](files/allsky/figure_allsky_1.0-10.0MeV_total_Orlando_DRE.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_total_Orlando_DRE.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_total_Orlando_DRE.png) |
-| 3  | Olrando 2018 DRELowV | ![img](files/allsky/figure_allsky_1.0-10.0MeV_total_Orlando_DREVlow.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_total_Orlando_DREVlow.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_total_Orlando_DREVlow.png) |
 
 
 <!--
