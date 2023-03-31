@@ -50,6 +50,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 - [Table of all-sky maps](files/allsky/Table_allsky.html)
 - [md test](files/allsky/test_Table_allsky.md)
 
+[another page](./another-page.md)
 
 
 <!--
