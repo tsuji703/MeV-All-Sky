@@ -14,8 +14,9 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 ### Latest
 - [Table of all sources](https://tsuji703.github.io/MeV-All-Sky/files/MeV_all_source.html)
-- Point source catalog: [fits](files/catalog/crossmatch_latest.fits), [csv](files/catalog/crossmatch_latest.csv)
-- Extended source catalog: [fits](files/catalog/crossmatch_latest_extended.fits), [csv](files/catalog/crossmatch_latest_extended.csv)
+- Download:
+  - Point source catalog: [fits](files/catalog/crossmatch_latest.fits), [csv](files/catalog/crossmatch_latest.csv)
+  - Extended source catalog: [fits](files/catalog/crossmatch_latest_extended.fits), [csv](files/catalog/crossmatch_latest_extended.csv)
 
 <!--
 - ver. 1
@@ -33,13 +34,17 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 # MeV Gamma-ray All-Sky Map
 
-- Flux is integrated over three energy bands (1-10, 0.1-1, and 10-100 MeV) and in units of erg/cm2/s.
-- Maps are in HEALPix (<a href="https://healpix.sourceforge.io/">link</a> and <a href="https://healpy.readthedocs.io/en/latest/">HealPy</a>) format
-  - Nside is 64 (otherwise mentioned)
 - The all-sky map includes:
   1. Source (<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac0341">Tsuji et al. 2021</a> and [catalog](https://tsuji703.github.io/MeV-All-Sky/files/MeV_all_source.html))
   2. Galactic diffuse emission ([Ackermann et al. 2012](https://iopscience.iop.org/article/10.1088/0004-637X/750/1/3) and [Olrando 2018](http://doi.org/10.1093/mnras/stx3280))
   3. Cosmic gamma-ray background or extragalactic diffuse emission ([Weidenspointner et al. 2000 (COMPTEL)](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..467W/abstract) and [Watanabe 2000 (SMM)](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..471W/abstract))
+
+- Notes
+  - Flux is integrated over four energy bands (1-10, 0.1-1, 10-100, and 0.2-5 MeV) and in units of erg/cm$^2$/s.
+  - Maps are in HEALPix (<a href="https://healpix.sourceforge.io/">link</a> and <a href="https://healpy.readthedocs.io/en/latest/">HealPy</a>) format. Nside is 64 (otherwise mentioned)
+  - [GALPROP](https://galprop.stanford.edu/) is used for calculaion of Galactic diffuse emission
+
+
 
 ### Latest
 - [Table of all-sky maps](files/allsky/Table_allsky.html)
