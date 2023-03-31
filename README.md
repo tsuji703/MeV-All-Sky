@@ -1,6 +1,8 @@
+<!--
 Materials in the MeV gamma-ray sky, source catalog and all-sky maps, are available below.
 The source catalog is produced by a cross-matching of the hard X-ray (by Swift-BAT) and GeV gamma-ray (Fermi-LAT) catalogs.
 The all-sky maps made use of [GALPROP](https://galprop.stanford.edu/) for Galactic diffuse emission, the source catalog, and cosmic gamma-ray background (CGB) model by COMPTEL.
+-->
 
 
 # MeV Gamma-ray Source Catalog
