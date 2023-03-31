@@ -4,7 +4,7 @@ The source catalog is produced by a cross-matching of the hard X-ray (by Swift-B
 The all-sky maps made use of [GALPROP](https://galprop.stanford.edu/) for Galactic diffuse emission, the source catalog, and cosmic gamma-ray background (CGB) model by COMPTEL.
 -->
 
-
+---
 # MeV Gamma-ray Source Catalog
 
 This catalog is based on <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac0341">Tsuji et al. 2021</a>
@@ -31,7 +31,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 -->
 
 
-
+---
 # MeV Gamma-ray All-Sky Map
 
 - The all-sky map includes:
@@ -48,6 +48,13 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 
 ### Latest
 - [Table of all-sky maps](files/allsky/Table_allsky.html)
+
+| id | Notes | 1-10 MeV | 0.1-1 MeV | 10-100 MeV | FITS
+| ---|---    | ---      | ---       | --- |---
+|   | **COMPTEL** for CGB  |   |   | |  [total_allsky.zip](files/allsky/zip_total_COMPTELcgb/) |
+| 1  | Ackermann+ 2012 | ![img](files/allsky/figure_allsky_1.0-10.0MeV_total_Ackermann.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_total_Ackermann.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_total_Ackermann.png) |
+| 2  | Olrando 2018 DRE | ![img](files/allsky/figure_allsky_1.0-10.0MeV_total_Orlando_DRE.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_total_Orlando_DRE.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_total_Orlando_DRE.png) |
+| 3  | Olrando 2018 DRELowV | ![img](files/allsky/figure_allsky_1.0-10.0MeV_total_Orlando_DREVlow.png) | ![img](files/allsky/figure_allsky_0.1-1.0MeV_total_Orlando_DREVlow.png) | ![img](files/allsky/figure_allsky_10.0-100.0MeV_total_Orlando_DREVlow.png) |
 
 
 <!--
