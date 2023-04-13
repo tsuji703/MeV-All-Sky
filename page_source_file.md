@@ -5,6 +5,8 @@
   - Point source catalog: [csv](https://tsuji703.github.io/MeV-All-Sky/files/catalog/crossmatch_latest.csv)
   - Extended source catalog: [csv](https://tsuji703.github.io/MeV-All-Sky/files/catalog/crossmatch_latest.csv)
 
+$F(E) = E^{-\alpha}$
+
 ## What's in catalog
 
 | Parameter | Note
