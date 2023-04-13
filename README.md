@@ -17,7 +17,7 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 - Download:
   - Point source catalog: [csv](files/catalog/crossmatch_latest.csv)
   - Extended source catalog: [csv](files/catalog/crossmatch_latest_extended.csv)
-  - See [here](./another-page.md) for details
+  - See [here](./page_source_file.md) for details
 
 <!--
 - ver. 1
