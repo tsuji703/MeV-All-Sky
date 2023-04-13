@@ -14,8 +14,8 @@
 |       | D: Different source.
 |       | A: Ambiguous match.
 |       | U: Unidentified source.
-|"bat_*" | Parameters in the Swift-BAT catalog.
-|"fermi_*" | Parameters in the Fermi-LAT catalog.
+|"bat_*" | Parameters in the [Swift-BAT catalog](https://swift.gsfc.nasa.gov/results/bs105mon/).
+|"fermi_*" | Parameters in the [Fermi-LAT catalog](https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/).
 |"separation"| Angular distance between the Swift-BAT and Fermi-LAT sources in units of degree.
 |"Inner Gal. region" | True if the sources is located within the innter Galactic region of l<60 and |b|<10 degrees.
 |"Model" | the model used to fit the SED.
