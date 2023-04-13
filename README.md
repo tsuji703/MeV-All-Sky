@@ -15,8 +15,9 @@ and <a href="https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/">Fermi
 ### Latest
 - [Table of all sources](https://tsuji703.github.io/MeV-All-Sky/files/MeV_all_source.html)
 - Download:
-  - Point source catalog: [fits](files/catalog/crossmatch_latest.fits), [csv](files/catalog/crossmatch_latest.csv)
-  - Extended source catalog: [fits](files/catalog/crossmatch_latest_extended.fits), [csv](files/catalog/crossmatch_latest_extended.csv)
+  - Point source catalog: [csv](files/catalog/crossmatch_latest.csv)
+  - Extended source catalog: [csv](files/catalog/crossmatch_latest_extended.csv)
+  - See [here](./another-page.md) for details
 
 <!--
 - ver. 1
