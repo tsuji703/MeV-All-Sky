@@ -21,7 +21,7 @@
 |"Inner Gal. region" | True if the sources is located within the innter Galactic region of l<60 and b<10 degrees
 |"Model" | LP (Log parabola), BPL (broken power law), 2-comp (two component model)*, or User (source-dependent model)**
 | "LP_*" | Best-fit parameters with the log-parabola model (eq?)
-| "BPL_*"| Best-fit parameters with the broken power-law model
+| "BPL_*"| Best-fit parameters with the broken power-law model. Eb and K are in units of MeV and erg/cm2/s, respectively.
 
 *2-comp: Two-component model. A superposition of the best-fit models in the Swift-BAT and Fermi-LAT catalogs.
 
