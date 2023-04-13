@@ -6,6 +6,19 @@
   - Extended source catalog: [csv](https://tsuji703.github.io/MeV-All-Sky/files/catalog/crossmatch_latest.csv)
 
 
+
+ Parameter | Note
+ --- |---
+"Flag" | M: Matched source.
+       | F: False-matched source.
+       | D: Different source.
+       | A: Ambiguous match.
+       | U: Unidentified source.
+"bat_*" | Parameters in the Swift-BAT catalog.
+
+"fermi_*" | Parameters in the Fermi-LAT catalog.
+
+
 ## What's in catalog
 
 "Flag" 
