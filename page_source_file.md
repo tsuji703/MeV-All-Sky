@@ -11,20 +11,21 @@ $F(E) = E^{-\alpha}$
 
 | Parameter | Note
 | --- |---
-|"Flag" | M: Matched source.
-|       | F: False-matched source.
-|       | D: Different source.
-|       | A: Ambiguous match.
-|       | U: Unidentified source.
-|"bat_*" | Parameters in the [Swift-BAT catalog](https://swift.gsfc.nasa.gov/results/bs105mon/).
-|"fermi_*" | Parameters in the [Fermi-LAT catalog](https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/).
-|"separation"| Angular distance between the Swift-BAT and Fermi-LAT sources in units of degree.
-|"Inner Gal. region" | True if the sources is located within the innter Galactic region of l<60 and $|b|<10$ degrees.
-|"Model" | LP (Log parabola), BPL (broken power law), 2-comp (two component model)*, or User (source-dependent model)**.
-| "LP_*" | Best-fit parameters with the log-parabola model. (eq?)
-| "BPL_*"| Best-fit parameters with the broken power-law model.
+|"Flag" | M: Matched source
+|       | F: False-matched source
+|       | D: Different source
+|       | A: Ambiguous match
+|       | U: Unidentified source
+|"bat_*" | Parameters in the [Swift-BAT catalog](https://swift.gsfc.nasa.gov/results/bs105mon/)
+|"fermi_*" | Parameters in the [Fermi-LAT catalog](https://fermi.gsfc.nasa.gov/ssc/data/access/lat/8yr_catalog/)
+|"separation"| Angular distance between the Swift-BAT and Fermi-LAT sources in units of degree
+|"Inner Gal. region" | True if the sources is located within the innter Galactic region of l<60 and b<10 degrees
+|"Model" | LP (Log parabola), BPL (broken power law), 2-comp (two component model)*, or User (source-dependent model)**
+| "LP_*" | Best-fit parameters with the log-parabola model (eq?)
+| "BPL_*"| Best-fit parameters with the broken power-law model
 
 *2-comp: Two-component model. A superposition of the best-fit models in the Swift-BAT and Fermi-LAT catalogs.
+
 **Source-dependent model: Physical model is applied based on the literature. Adopted only for sources which are not well fitted by any of models above (i.e., Circinus Galaxy, MSH 15-52, and NGC 4945).
 
 
