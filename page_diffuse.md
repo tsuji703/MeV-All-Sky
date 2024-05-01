@@ -12,14 +12,9 @@ $$ I(E) = K \left( \frac{E}{E_{\rm ref}} \right) ^{-\Gamma} $$
 ### COMPTEL
 - E = 0.8 to 30 MeV
 - $\Gamma$ = 3.3 for E < 3 MeV and $\Gamma$ = 2 for E > 3 MeV
-- $K$ = $2.2 \times 10^{-4}$ /(MeV cm $^2$ s sr)
+- $K$ = $2.2 \times 10^{-4}$ /(MeV cm$^2$ s sr)
 - $E_{\rm ref}$ = 3 MeV
 
-```markdown
-$$ I(E) = K \left( \frac{E}{E_{\rm ref}} \right) ^{-\Gamma} $$
-ll
-test
-```
 
 
 ### SMM (Solar Maximum Mission) Gamma-Ray Spectrometer (GRS)
@@ -32,7 +27,7 @@ test
 
 ### Fermi
 - E = 100 MeV to 1 TeV
-- $\Gamma$ = 2.31 for E < 3 MeV 
+- $\Gamma$ = 2.31 
 - $K$ = $1.48 \times 10^{-7}$ /(MeV cm$^2$ s sr)
 - (additional copmonent) $E_{\rm cut}$ = 362 GeV
 - $E_{\rm ref}$ = 100 MeV
