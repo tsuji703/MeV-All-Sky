@@ -5,9 +5,7 @@
 
 ## Extragalactic emission
 
-\[
-I(E) = K \left( \frac{E}{E_{\rm ref}} \right) ^{-\Gamma} 
-\]
+$$ I(E) = K \left( \frac{E}{E_{\rm ref}} \right) ^{-\Gamma} $$
 
 ### COMPTEL
 - $\Gamma$ = 3.3 for E < 3 MeV and $\Gamma$ = 2 for E > 3 MeV
