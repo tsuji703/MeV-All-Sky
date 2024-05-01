@@ -37,5 +37,5 @@ $$ I(E) = K \left( \frac{E}{E_{\rm ref}} \right) ^{-\Gamma} $$
 2. COMPTEL: [Kappadath 1998](https://scholars.unh.edu/dissertation/2045/)
 3. COMPTEL: [Weidenspointner 2000](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..467W/abstract)
 4. SMM: [Watanabe 2000](https://ui.adsabs.harvard.edu/abs/2000AIPC..510..471W/abstract)
-5. Fermi: [Ackermann+ 2015](https:// iopscience.iop.org/article/ 10.1088/0004-637X/799/1/86); Model A (Table 6)
+5. Fermi: [Ackermann+ 2015](https://iopscience.iop.org/article/ 10.1088/0004-637X/799/1/86); Model A (Table 6)
 
