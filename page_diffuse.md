@@ -3,10 +3,11 @@
 
 # MeV gamma-ray diffuse emission
 
-![img](files/figure_EGB_spectra.png)
-
 
 ## Extragalactic emission
+
+![img](files/figure_EGB_spectra.png)
+
 
 $$ I(E) = K \left( \frac{E}{E_{\rm ref}} \right) ^{-\Gamma} $$
 
