@@ -1,6 +1,9 @@
-## MeV gamma-ray diffuse
+# MeV gamma-ray diffuse emission
 
-## Extragalactic 
+
+## Extragalactic emission
+
+$I(E) = K \left( \frac{E}{E_{\rm ref}} \right) ^{-\Gamma} $
 
 Reference
 1. Kappadath et al. 1997
