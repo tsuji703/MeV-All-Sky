@@ -1,8 +1,8 @@
 
 # MeV gamma-ray diffuse emission
 
+![img](files/figure_EGB_spectra.png)
 
-!(img)[./files/figure_EGB_spectra.png]
 
 ## Extragalactic emission
 
